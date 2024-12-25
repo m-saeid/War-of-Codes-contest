@@ -40,27 +40,13 @@ int sum(int arr[], int origin,int max, int tedad)
 int main()
 {
 	int arr[100], max = INT_MIN, tedad;
-//	int o_max, t_max ;
 	tedad = read(arr);
 	for(int origin = 0; origin < tedad; origin++)
-	{
 		for(int t = 1; t <= tedad; t++)
 		{	
 			int s = sum(arr, origin, tedad, t);
 			if(s > max)
-			{
 				max = s;
-//				o_max = origin;
-//				t_max = t;
-			}
 		}			
-	}
-	
-//	for(int i = 0, j = o_max; i < t_max; i++, j++)
-//	{
-//		if(j > tedad-1)j=0;
-//		cout << j << '-' << arr[j] << "  ";
-//	}
-//	cout << endl << max;
 	cout << max;
 }
