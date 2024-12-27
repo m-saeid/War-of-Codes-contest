@@ -73,4 +73,3 @@ int main()
 	cout << basket(data, limit, 1, 0);
     return 0;
 }
-
